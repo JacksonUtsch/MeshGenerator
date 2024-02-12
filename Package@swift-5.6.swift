@@ -1,5 +1,7 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 5.6
 
+// This is a legacy Package.swift structure to continue to maintain
+// support for Swift 5.6 toolchains
 import PackageDescription
 
 let package = Package(
@@ -9,7 +11,6 @@ let package = Package(
         .iOS(.v13),
         .tvOS(.v13),
         .watchOS(.v6),
-        .visionOS(.v1)
     ],
     products: [
         .library(
