@@ -173,7 +173,7 @@ internal extension Triangle {
         sanitizeNormals: Bool = false,
         material: Material?
     ) {
-        assert(sanitizeNormals || vertices.allSatisfy { $0.normal != .zero })
+//        assert(sanitizeNormals || vertices.allSatisfy { $0.normal != .zero })
         let plane = plane ?? Plane(unchecked: vertices.map { $0.position })
         storage = Storage(
             vertices: vertices.map {

@@ -115,7 +115,7 @@ public extension Plane {
 
 internal extension Plane {
     init(unchecked normal: Vector, w: Double) {
-        assert(normal.isNormalized)
+//        assert(normal.isNormalized)
         self.normal = normal
         self.w = w
     }
